@@ -9,11 +9,15 @@ import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 import { Techicr7Service } from './techicr7.service';
 import {HttpClientModule} from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     SignUpPageComponent,
+    LoginPageComponent,
+    ProfilePageComponent,
     //LoginPageComponent
   ],
   imports: [
