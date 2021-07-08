@@ -1,0 +1,41 @@
+<div class="login-box">
+   <h2>SignUp</h2>
+   <form (ngSubmit)="onSubmit()" class="form">
+     <div class="user-box">
+        <input class="input" type="text" id="firstName" required [(ngModel)]="user.firstName" name="firstName"
+        placeholder="firstName"/>
+    </div>
+ 
+   <div class="user-box">
+        <input class="input" type="text" id="lastName" required [(ngModel)]="user.lastName" name="lastName"
+        placeholder="lastName"/>
+    </div>
+
+    <div class="user-box">
+       <input class="input" type="text" id="mobileNo" required [(ngModel)]="user.mobileNo" name="mobileNo"
+       placeholder="mobile number"/>
+    </div>
+
+    <div class="user-box">
+       <input class="input" type="text" id="email" required [(ngModel)]="user.email" name="email"
+       placeholder="E-mail address"/>
+    </div>
+
+   <div class="user-box">
+       <input class="input" type="password" id="passWord" required [(ngModel)]="user.passWord" name="passWord"
+       placeholder="password"/>
+   </div>
+
+   <a>
+     <button type="submit" class="btn btn-success">Submit</button>
+   </a>
+
+</form>
+   <!-- /form -->
+ </div>
+ 
+ 
+ <div [hidden]="!submitted">
+   <h4>You submitted successfully!</h4>
+   <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+ </div>
